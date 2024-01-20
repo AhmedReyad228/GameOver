@@ -1,0 +1,269 @@
+/* ? ======> Start theme customize ======> */
+
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+  --login-main-color: #3D4045;
+}
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+  --login-main-color: #EFEFEF;
+}
+
+*{
+  text-decoration: none !important;
+  font-family: cursive;
+}
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #32383E;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #25292E;
+  border-radius: 10px;
+}
+
+body{
+  background-color: var(--main-color);
+}
+
+h1,h2,h3,h4,h5,h6,p,span{
+  color: var(--color-text) !important;
+}
+
+
+/* ? ======> End theme customize ======> */
+
+/* ! ======> Start Login ======> */
+
+.login .col-md-5{
+  background-image: url('../images/login.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.login .col-md-7{
+  background-color: var(--login-main-color);
+}
+.login p a{
+  color: var(--btn-main-color);
+  transition: all .3s;
+}
+.login p a:hover{
+  text-decoration: underline !important;
+  color: var(--color-text);
+}
+.login input{
+  background-color: var(--seconde-color);
+  color: var(--color-text) !important;
+  border: 0 !important;
+}
+.login input:focus{
+  background-color: var(--btn-main-color);
+}
+::placeholder{
+  color: var(--color-text) !important;
+}
+#loginBtn{
+  background-color: var(--btn-main-color) !important;
+  color: var(--color-text);
+}
+
+/* ! ======> End Login ======> */
+
+/* * ======> Start Register ======> */
+
+.register .col-lg-5{
+  background-image: url('../images/register.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.register .col-lg-7{
+  background-color: var(--login-main-color);
+}
+
+.register p a{
+  color: var(--btn-main-color);
+  transition: all .3s;
+}
+
+.register p a:hover{
+  text-decoration: underline !important;
+  color:var(--color-text);
+}
+
+.register input{
+  background-color: var(--seconde-color);
+  color: var(--color-text) !important;
+  border: 0 !important;
+}
+
+.register input:focus{
+  background-color: var(--main-color);
+}
+
+.register .pass{
+  position: relative;
+}
+
+.register .checkBox{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   appearance: none;
+   display: none;
+}
+
+#registerBtn{
+  background-color: var(--btn-main-color) !important;
+  color: var(--color-text);
+}
+
+/* * ======> End Register ======> */
+
+/* * ======> Start Login ======> */
+
+
+.login .pass{
+  position: relative;
+}
+
+.login .checkBox{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+/* * ======> End Login ======> */
+
+/* * ======> Start Home ======> */
+
+nav .navbar-brand{
+  color: var(--color-text);
+}
+
+nav .nav-item a{
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+nav{
+  border-bottom: 1px solid #0000004d !important;
+}
+
+nav .nav-item a:hover{
+  color: #09c;
+}
+
+nav .active{
+  color: #09c !important;
+}
+
+
+nav .w-25{
+  width: 40px !important;
+}
+
+.home .card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.home .card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+
+/* * ======> End Home ======> */
+
+/* ! ======> Start Loader ======> */
+
+
+.loading{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #00000088;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+/* ! ======> End Loader ======> */
+
+/* ? ======> Start Details ======> */
+
+.myHome{
+  color: var(--color-text);
+}
+
+/* ? ======> End Details ======> */
+
+
+
+#mode{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+

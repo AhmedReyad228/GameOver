@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? ======>> Title ========>> -->
+    <title>LogIn</title>
+
+    <!-- ! ======>> Fontawesome ========>> -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- * ======>> BootStrap ========>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ? ======>> My CSS ========>>  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <span class="position-fixed bottom-0 end-0">
+      <i onclick="myMode()" role="button" id="mode" class="fa-regular fa-sun fa-xl p-2"></i>
+    </span>
+
+    <main class="container login min-vh-100 hstack">
+      <section class="login-area shadow w-100 ">
+        <div class="row g-0 ">
+          <div class="col-md-5">
+            <div class="loginImage">
+              
+            </div>
+          </div>
+          <div class="col-md-7 rounded-end-3">
+            <div class="p-4">
+              <div class="text-center">
+                <img src="images/logo-sm.png" class="" alt="login logo">
+                <h1 class="mb-4">LogIn to Game Over</h1>
+              </div>
+              <div>
+                <form>
+                  <input id="yourEmail" class="form-control mb-3" type="text" placeholder="Enter your Email">
+
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <ul id="emailInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Email Is Required</li>
+                        <li>InValid Email Formate</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="pass">
+                    <input id="yourPassword" class="form-control" type="password" placeholder="Password" >
+                    <div id="checkBox" class="checkBox d-none" >
+                      <input id="myCheckBox" type="checkbox">
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <ul id="passwordInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Password Is Required</li>
+                        <li>Minimum eight characters, at least one letter and one number</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <button id="loginBtn" class="btn form-control mt-3">LogIn</button>
+                  <p id="message" class="text-center mt-2 text-danger"></p>
+                </form>
+              </div>
+              <p class="text-center mt-5">
+                Not a member yet? 
+                <a href="./register.html">Create Account ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ? ======>> BootStrap JS ========>> -->
+    <script src="Java script/jquery-3.7.1.min.js"></script>
+    <!-- ? ======>> BootStrap JS ========>> -->
+    <script src="Java script/bootstrap.bundle.min.js"></script>
+    <!-- ! ======>> Fontawesome JS ========>> -->
+    <script src="Java script/all.min.js"></script>
+    <!-- * ======>> JS ========>> -->
+    <script src="Java script/index.js"></script>
+  </body>
+</html>

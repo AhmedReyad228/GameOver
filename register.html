@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme = 'dark'>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+            <!-- ! ======>> Fontawesome ========>> -->
+    <link rel="stylesheet" href="css/all.min.css">
+            <!-- * ======>> BootStrap ========>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+            <!-- ? ======>> My CSS ========>>  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i onclick="myMode()" role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+    </span>
+
+    <main class="container register">
+      <section class="register-area shadow mt-4">
+        <div class="row g-0">
+          <div class="col-lg-5 rounded-end-3">
+            
+          </div>
+          <div class="col-lg-7 rounded-end-3">
+            <div class="p-4">
+              <div class="text-center">
+                <img src="images/logo-sm.png" alt="register logo">
+                <h1 class="mb-4">Register to Game Over</h1>
+              </div>
+              <div>
+                <form>
+                  <div class="d-flex">
+                    <input id="fName" class=" form-control me-3" type="text" placeholder="First Name">
+                    <input id="lName" class="form-control" type="text" placeholder="Last Name">
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-md-6">
+                      <ul id="fNameInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>First Name Is Required</li>
+                        <li>Minmum Length 2 and Maxmum 20</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul id="lNameInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Last Name Is Required</li>
+                        <li>Minmum Length 2 and Maxmum 20</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <input id="myEmail" class="form-control mt-3" type="text" placeholder="Email Address" >
+
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <ul id="emailInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Email Is Required</li>
+                        <li>InValid Email Formate</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="pass">
+                    <input id="myPassword" class="form-control mt-3" type="password" placeholder="Password" >
+
+                    <div id="checkBox" class="checkBox d-none" >
+                      <input id="myCheckBox" type="checkbox">
+                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <ul id="passwordInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Password Is Required</li>
+                        <li>Minimum eight characters, at least one letter and one number</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <input id="myAge" class="form-control mt-3" type="number" placeholder="Enter Age" >
+
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+                      <ul id="ageInValid" class="bg-white rounded-2 text-danger d-none">
+                        <li>Age Is Required</li>
+                        <li>Minimum 10 Maxmum 80</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <button type="submit" id="registerBtn" class=" form-control mt-3 btn">Register</button>
+                  <p id="message" class="text-center mt-2 text-danger"></p>
+                </form>
+              </div>
+              <p class="text-center">
+                Already a member? 
+                <a href="./index.html">LogIn</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+        <!-- ? ======>> BootStrap JS ========>> -->
+    <script src="Java script/bootstrap.bundle.min.js"></script>
+        <!-- ! ======>> Fontawesome JS ========>> -->
+    <script src="Java script/all.min.js"></script>
+        <!-- * ======>> JS ========>> -->
+    <script src="Java script/register.js"></script>
+</body>
+</html>
